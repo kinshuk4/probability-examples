@@ -4,14 +4,11 @@ This repository is a collection of notes and examples on probability. Feel free 
 
 ###Probability Distilled
 
-*Probability is the very guide of life.*
-- Cicero
+*Probability is the very guide of life.* Cicero
 
-*The probability of an event is the ratio of the number of cases favorable to it, to the number of all cases possible, when [the cases are] equally possible. ... Probability is thus simply a fraction whose numerator is the number of favorable cases and whose denominator is the number of all the cases possible.*
-- Laplace
+*The probability of an event is the ratio of the number of cases favorable to it, to the number of all cases possible, when [the cases are] equally possible. ... Probability is thus simply a fraction whose numerator is the number of favorable cases and whose denominator is the number of all the cases possible.* Laplace
 
-*Information is the ability to make predictions with a likelihood better than chance.*
-- Chris Adami
+*Information is the ability to make predictions with a likelihood better than chance.* Chris Adami
 
 ###Conditional Probability
 
