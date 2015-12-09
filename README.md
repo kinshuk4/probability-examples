@@ -432,19 +432,19 @@ is not technically zero, but practically is.
 
 The ratio of holes inside the circle to total darts inside the perimeter of the square (including darts landing inside the circle) approaches Pi with infinite precision as more and more darts are thrown.
 
-* The area of the circle is 
+The area of the circle is 
 ```
 pi  * r^2
 ```
-* The area of the square is 
+The area of the square is 
 ```
 4 * r^2
 ```
-* The ratio of the circle area to square area, call it p is
+The ratio of the circle area to square area, call it p is
 ```
 p = (pi * r^2) / (4 * r^2) = pi / 4
 ```
-* Therefore,
+Therefore,
 ```
 pi = 4p 
 ```
