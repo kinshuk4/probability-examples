@@ -116,6 +116,32 @@ The probability that both children are boys, given that at least one child is a 
 ```
 [BB] / [BB, BG, GB] = 1/3
 ```
+Another way to see this is by running a simple simulation of 1,000,000 randomly generated families with two children, at least one of whom is a boy.
+
+``` python
+from __future__ import division
+import random
+
+def random_child():
+	return random.choice(["boy", "girl"])
+	
+both_boys = 0
+either_boy = 0
+
+random.seed(0)
+for _ in range(1000000):
+	younger = random_child()
+	older = random_child()
+	if older == "boy" and younger == "boy":
+		both_boys += 1
+	if older == "boy" or younger == "boy":
+		either_boy += 1
+		
+print "both_boys count", both_boys
+print "either_boy count", either_boy
+print "P(both boys given at least one boy)", both_boys / either_boy
+```
+
 <a name="answer-two"></a>
 **Answer: 1/2**
 
@@ -127,6 +153,31 @@ The probability that both children are boys, given that the older child is a boy
 
 ```
 [BB] / [BB, BG] = 1/2
+```
+Another way to see this is by running a simple simulation of 1,000,000 randomly generated families with two children, the older of whom is a boy.
+
+``` python
+from __future__ import division
+import random
+
+def random_child():
+	return random.choice(["boy", "girl"])
+	
+both_boys = 0
+older_boy = 0
+
+random.seed(0)
+for _ in range(1000000):
+	younger = random_child()
+	older = random_child()
+	if older == "boy":
+		older_boy += 1
+	if older == "boy" and younger == "boy":
+		both_boys += 1
+		
+print "both_boys count", both_boys
+print "older_boy count", older_boy
+print "P(both boys given older boy)", both_boys / older_boy
 ```
 
 <a name="answer-three"></a>
