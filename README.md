@@ -112,6 +112,13 @@ Question: A drawer contains red and black socks. If you draw two socks at random
 
 [Go To Answer](#answer-seventeen)
 
+###Other
+
+Question: Susan's father offers her a prize if she wins at least two tennis sets in a row in a three-set series to be played with her father and the club champion alternately: father-champion-father or champion-father-champion. The club champion is a better player than her father. Which series should Susan choose to maximize her chances of winning at least two games in the series?
+
+[Go To Answer](#answer-eighteen)
+
+
 ###Answers
 
 <a name="answer-one"></a>
@@ -543,3 +550,39 @@ In the case of 21 socks (15 red and 6 black), the probability of selecting two r
 
 ```
 p(both selected socks are red) = p(first sock is red) * p(second sock is red) = 15/21 * 14/20 = 210/420 = 1/2
+```
+
+<a name="answer-eighteen"></a>
+**Answer: champion-father-champion**
+
+Susan can win at least two games in three ways:
+
+```
+[win, win, lose]
+[lose, win, win]
+[win, win, win]
+```
+
+Each possibility of winning at least two games requires Susan to win the middle game. Since her chances of beating her father are higher than beating the champion, it's advantageous for her to play her father in the second game. This comparative advantage in the middle game outweighs playing the first and last games against the champion.
+
+We can see this with an example. Say she's evenly matched with her father (50% of the time Susan wins against her father) and well outmatched by the champion (10% of the time Susan wins against the champion).
+
+It follows that the probability of Susan winning at least two out of three games for father-champion-father sets is 7.5%:
+
+```
+father-champion-father
+
+[win, win, lose] -> 0.5 * 0.1 * (1 - 0.5) = 0.025
+[lose, win, win] -> (1 - 0.5) * 0.1 * 0.5 = 0.025
+[win, win, win] -> 0.5 * 0.1 * 0.5 = 0.025
+```
+
+On the other hand, the probability of Susan winning at least two out of three games for champion-father-champion sets is 9.5%, a better chance for Susan:
+
+```
+champion-father-champion
+
+[win, win, lose] -> 0.1 * 0.5 * (1 - 0.1) = 0.045
+[lose, win, win] -> (1 - 0.1) * 0.5 * 0.1 = 0.045
+[win, win, win] -> 0.1 * 0.5 * 0.1 = 0.005
+```
