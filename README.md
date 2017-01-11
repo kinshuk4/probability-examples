@@ -118,6 +118,9 @@ Question: Susan's father offers her a prize if she wins at least two tennis sets
 
 [Go To Answer](#answer-eighteen)
 
+Question: A three-person jury has two members, each of whom independently has probability p of making the correct decision, and a third juror who flips a coin. Majority rules for the three-person jury. A one-person jury has probability p of making the correct decision. Which jury has the better probability of making the correct decision?
+
+[Go To Answer](#answer-nineteen)
 
 ###Answers
 
@@ -586,3 +589,25 @@ champion-father-champion
 [lose, win, win] -> (1 - 0.1) * 0.5 * 0.1 = 0.045
 [win, win, win] -> 0.1 * 0.5 * 0.1 = 0.005
 ```
+
+<a name="answer-nineteen"></a>
+**Answer: Same probability p for both juries**
+
+Both juries have the same probability p of making the correct decision.
+
+The three-person jury can make the correct decision in four different ways. At least two of the three jurors must be correct (here heads denotes a correct decision):
+
+```
+[juror one correct, juror two correct, juror three flips heads] -> p * p * 0.5 = 0.5p^2
+[juror one correct, juror two correct, juror three flips tails] -> p * p * 0.5 = 0.5p^2
+[juror one correct, juror two incorrect, juror three flips heads] -> p * (1 - p) * 0.5 = 0.5p - 0.5p^2
+[juror one incorrect, juror two correct, juror three flips heads] -> (1 - p) * p * 0.5 = 0.5p - 0.5p^2
+```
+
+Adding the four values above results in probability p, the same probability p as the single juror.
+
+```
+0.5p^2 + 0.5p^2 + 0.5p - 0.5p^2 + 0.5p - 0.5p^2 = p
+```
+
+Therefore, there's no difference between the three-person jury and the one-person jury, each jury has probability p of making the correct decision.
