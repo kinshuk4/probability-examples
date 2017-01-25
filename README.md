@@ -122,6 +122,10 @@ Question: A three-person jury has two members, each of whom independently has pr
 
 [Go To Answer](#answer-nineteen)
 
+Question: On average, how many times must you throw a die until you get a 6?
+
+[Go To Answer](#answer-twenty)
+
 ###Answers
 
 <a name="answer-one"></a>
@@ -611,3 +615,42 @@ Adding the four values above results in probability p, the same probability p as
 ```
 
 Therefore, there's no difference between the three-person jury and the one-person jury, each jury has probability p of making the correct decision.
+
+<a name="answer-twenty"></a>
+**Answer: six**
+
+With a six-sided die, it takes on average six rolls to roll a 6.
+
+To verify this, let p be the probability of rolling a 6 and (q = 1 - p) be the probability if not rolling a 6. For each successive roll, the probability of rolling a 6 is:
+
+```
+trial 1: p
+trial 2: q * p
+trial 3: q^2 * p
+etc.
+```
+The sum of these probabilities is 1.
+
+We'll call the average number of trials m (the expected number of trials). m is defined as:
+
+```
+m = p + 2pq + 3pq^2 + 4pq^3 + ....
+```
+
+Solving for m shows that.
+
+```
+m(1 - q) = mp = 1
+```
+
+And therefore.
+
+```
+m = 1/p
+```
+
+In this example, the probability p of rolling a six is 1/6 and the average number of rolls m is:
+
+```
+m = 1/p = 1/(1/6) = 6
+```
