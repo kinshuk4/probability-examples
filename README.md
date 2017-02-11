@@ -24,6 +24,10 @@ Question: Mrs. Smith has two children. At least one of them is a boy born on Tue
 
 [Go To Answer](#answer-three)
 
+Question: There are three drawers. One drawer has two gold coins, one drawer has two silver coins, and one drawer has one gold and one silver coin. You randomly pick a drawer and randomly select a coin from within that drawer. The coin you select is a silver coin. What is the probability that the other coin is also a silver coin?
+
+[Go To Answer](#answer-twenty-one)
+
 Question: This is a classic, called the Monty Hall problem. Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say door 1, and the host, who knows what's behind all three doors, opens another door, say door 3, which has a goat (the fact that the host always picks a door with a goat behind it is key to this question). He then says to you, "Do you want to pick door 2?" Is it to your advantage to switch your choice?
 
 [Go To Answer](#answer-four)
@@ -653,4 +657,21 @@ In this example, the probability p of rolling a six is 1/6 and the average numbe
 
 ```
 m = 1/p = 1/(1/6) = 6
+```
+
+<a name="answer-twenty-one"></a>
+**Answer: 2/3**
+
+We know that a silver coin was selected. This can occur in only three ways, and each of these ways is equally likely to occur with probability of 1/3.
+
+```
+drawer with two silver coins and first silver coin selected -> other coin is silver -> 1/3
+drawer with two silver coins and second silver coin selected -> other coin is silver -> 1/3
+drawer with one silver coin and silver coin selected -> other coin is gold -> 1/3
+```
+
+Since each of the possibilities above is equally likely, the probability that the other coin is silver is 2/3:
+
+```
+(1/3 + 1/3) / 1
 ```
