@@ -223,6 +223,23 @@ The probability that both children are boys, given that one of the children is a
 = 13/27
 ```
 
+<a name="answer-twenty-one"></a>
+**Answer: 2/3**
+
+We know that a silver coin was selected. This can occur in only three ways, and each of these ways is equally likely to occur with probability of 1/3.
+
+```
+drawer with two silver coins and first silver coin selected -> other coin is silver -> 1/3
+drawer with two silver coins and second silver coin selected -> other coin is silver -> 1/3
+drawer with one silver coin and silver coin selected -> other coin is gold -> 1/3
+```
+
+Since each of the possibilities above is equally likely, the probability that the other coin is silver is 2/3:
+
+```
+(1/3 + 1/3) / 1
+```
+
 <a name="answer-four"></a>
 **Answer: Yes, you should switch doors**
 
@@ -657,21 +674,4 @@ In this example, the probability p of rolling a six is 1/6 and the average numbe
 
 ```
 m = 1/p = 1/(1/6) = 6
-```
-
-<a name="answer-twenty-one"></a>
-**Answer: 2/3**
-
-We know that a silver coin was selected. This can occur in only three ways, and each of these ways is equally likely to occur with probability of 1/3.
-
-```
-drawer with two silver coins and first silver coin selected -> other coin is silver -> 1/3
-drawer with two silver coins and second silver coin selected -> other coin is silver -> 1/3
-drawer with one silver coin and silver coin selected -> other coin is gold -> 1/3
-```
-
-Since each of the possibilities above is equally likely, the probability that the other coin is silver is 2/3:
-
-```
-(1/3 + 1/3) / 1
 ```
