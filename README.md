@@ -237,7 +237,7 @@ drawer with one silver coin and silver coin selected -> other coin is gold -> 1/
 Since each of the possibilities above is equally likely, the probability that the other coin is silver is 2/3:
 
 ```
-(1/3 + 1/3) / 1
+(1/3 + 1/3) / 1 = 2/3
 ```
 
 <a name="answer-four"></a>
