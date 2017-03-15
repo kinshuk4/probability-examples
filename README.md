@@ -1,8 +1,8 @@
-##Probability Examples
+## Probability Examples
 
 This repository is a collection of notes and examples on probability. Feel free to send feedback, more examples, or clarifications.
 
-###Probability Distilled
+### Probability Distilled
 
 *Probability is the very guide of life.* Cicero
 
@@ -10,7 +10,7 @@ This repository is a collection of notes and examples on probability. Feel free 
 
 *Information is the ability to make predictions with a likelihood better than chance.* Chris Adami
 
-###Conditional Probability
+### Conditional Probability
 
 Question: Mr. Smith has two children. At least one of them is a boy. What is the probability that both children are boys?
 
@@ -44,7 +44,7 @@ Question: A test of a disease has a 95% sensitivity rate (5% of the time the tes
 
 [Go To Answer](#answer-seven)
 
-###Sampling
+### Sampling
 
 Question: You live in a town with two hospitals -- one large, the other small. On a given day, 60 percent of those born in one of the two hospitals are boys. Which hospital is it likely to be?
 
@@ -54,7 +54,7 @@ Question: During World War II, the statistician Abraham Wald tried to determine 
 
 [Go To Answer](#answer-nine)
 
-###Binomial Combinations
+### Binomial Combinations
 
 Question: In a five-card poker hand in a standard 52-card deck, what’s the probability of getting dealt four aces?
 
@@ -68,7 +68,7 @@ Question: A machine has three independent engines and needs at least two to func
 
 [Go To Answer](#answer-twelve)
 
-###Coincidences
+### Coincidences
 
 Question: 100 people are in the same room. How many people does it take for the probability that two or more people share the same birthday to exceed 50%?
 
@@ -78,13 +78,13 @@ Question: What’s the probability that a monkey at a typewriter accidentally wr
 
 [Go To Answer](#answer-fourteen)
 
-###Monte Carlo Induction
+### Monte Carlo Induction
 
 Question: There’s a picture on the wall of a circle drawn inside of a square (such that the circle touches the square at four points). How would you calculate the number Pi by randomly throwing darts at the drawing? Assume all darts hit the drawing somewhere with uniform probability.
 
 [Go To Answer](#answer-fifteen)
 
-###Power Laws
+### Power Laws
 
 In a Gaussian bell curve, probabilities drop at an exponentially accelerating rate as you move away from the mean. In a “power law” distribution, probabilities drop at a scalar rate.
 
@@ -106,7 +106,7 @@ The power exponent itself is guessed a priori or inferred from past data, which 
 
 The exponent also varies along the distribution depending on the cut points you choose. A single precise exponent does not exist. Despite this limitation, it's useful to know that books sales, wealth distribution, word distribution, venture capital returns, stock markets, and many other phenomena are scalable, not Gaussian.
 
-###Random Selection
+### Random Selection
 
 Question: A drawer contains red and black socks. If you draw two socks at random, the probability that both socks are red is 1/2. What's the smallest number of socks that the drawer can contain?
 
@@ -116,7 +116,7 @@ Question: A drawer contains red and black socks. If you draw two socks at random
 
 [Go To Answer](#answer-seventeen)
 
-###Other
+### Other
 
 Question: Susan's father offers her a prize if she wins at least two tennis sets in a row in a three-set series to be played with her father and the club champion alternately: father-champion-father or champion-father-champion. The club champion is a better player than her father. Which series should Susan choose to maximize her chances of winning at least two games in the series?
 
@@ -130,7 +130,7 @@ Question: On average, how many times must you throw a die until you get a 6?
 
 [Go To Answer](#answer-twenty)
 
-###Answers
+### Answers
 
 <a name="answer-one"></a>
 **Answer: 1/3**
